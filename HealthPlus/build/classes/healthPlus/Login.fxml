@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="healthPlus.LoginController">
+   <children>
+      <Pane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <TextField fx:id="username_field" layoutX="249.0" layoutY="79.0" />
+            <PasswordField fx:id="password_field" layoutX="249.0" layoutY="118.0" />
+            <Label layoutX="172.0" layoutY="84.0" text="Username:">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="174.0" layoutY="123.0" text="Password:">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font></Label>
+            <Button layoutX="264.0" layoutY="152.0" mnemonicParsing="false" onAction="#btnLoginAction" text="Login" />
+            <Label fx:id="loginmsg" alignment="CENTER" layoutX="4.0" layoutY="33.0" prefHeight="26.0" prefWidth="594.0" textFill="#d71010">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Label>
+            <Hyperlink layoutX="242.0" layoutY="186.0" onAction="#forgotpassword" text="Forgot Password">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Hyperlink>
+         </children>
+      </Pane>
+   </children>
+</VBox>

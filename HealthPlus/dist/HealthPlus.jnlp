@@ -11,7 +11,7 @@
   </resources>
   <resources>
     <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
-    <jar href="HealthPlus.jar" size="25743" download="eager" />
+    <jar href="HealthPlus.jar" size="34469" download="eager" />
     <jar href="lib/ojdbc7.jar" size="3534610" download="eager" />
   </resources>
 <security>

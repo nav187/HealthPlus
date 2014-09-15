@@ -23,8 +23,8 @@ public class DbConn {
     
     // nav was here 
 
-    private static Connection connection ;
-    private static Statement statement;
+    protected static Connection connection ;
+    protected static Statement statement;
 
     public static Connection connect() throws ClassNotFoundException, InstantiationException, IllegalAccessException{
         try{

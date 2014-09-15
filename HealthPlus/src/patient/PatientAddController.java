@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 
-package healthPlus;
+package patient;
 
 import java.net.URL;
 import java.sql.Connection;
@@ -24,6 +24,9 @@ import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import healthPlus.DbConn;
 import healthPlus.DbConn;
+import healthPlus.DbConn;
+import healthPlus.Patient;
+import healthPlus.PatientQueries;
 
 /**
  * FXML Controller class
@@ -126,10 +129,7 @@ public class PatientAddController implements Initializable {
     @FXML
     private TextField add_allergy2;
     
-    private Connection conn;
-    
-    private PreparedStatement prepStatement;
-
+   
     /**
      * Initializes the controller class.
      */
@@ -142,8 +142,6 @@ public class PatientAddController implements Initializable {
     //add_first.getText(), Integer.parseInt(add_height.getText()), 
     @FXML
     private void onAddItem(ActionEvent aE) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
-
-        conn = DbConn.connect();
         
         PatientQueries patientQueries = new PatientQueries();
         patientQueries.insertPatient(new Patient(add_first.getText(), add_last.getText(), "female", add_address.getText(), add_city.getText(), add_state.getText(), add_postcode.getText(), add_email.getText(), (add_phone.getText())));
